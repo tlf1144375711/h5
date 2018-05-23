@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>第二杯半价</title>
+    <script type="text/javascript">
+        // language="JavaScript"
+        var price;
+        var count;
+        count = prompt("您来几杯？");
+        if (isNaN(count)) {
+            document.write("请输入一个数字");
+        } else {
+            count = count * 1;
+            if (Number.isInteger(count)) {
+                if (count % 2 == 0) {
+                    price = count * 7.5;
+                } else {
+                    price = count * 7.5 + 2.5;
+                }
+                document.write("您需要支付：" + price + "元");
+            } else {
+                document.write("请输入一个整数");
+            }
+
+        }
+    </script>
+    <style media="screen">
+        body {
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
